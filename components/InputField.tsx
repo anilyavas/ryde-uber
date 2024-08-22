@@ -1,3 +1,4 @@
+import { InputFieldProps } from '@/types/type';
 import {
   KeyboardAvoidingView,
   TouchableWithoutFeedback,
@@ -19,7 +20,7 @@ export default function InputField({
   iconStyle,
   className,
   ...props
-}) {
+}: InputFieldProps) {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
